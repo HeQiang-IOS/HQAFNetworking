@@ -1,0 +1,33 @@
+{
+  "name": "HQAFNetworking",
+  "version": "0.1.0",
+  "summary": "基于AFNetworking封装的HQAFNetworking.",
+  "description": "基于AFNetworking封装的HQAFNetworking工具。统一网络请求方法，get请求和post请求",
+  "homepage": "https://github.com/HeQiang-IOS/HQAFNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "heqiang2011": "heqiang2011@163.com"
+  },
+  "source": {
+    "git": "https://github.com/HeQiang-IOS/HQAFNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "HQAFNetworking/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.2.1"
+    ]
+  }
+}

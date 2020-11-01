@@ -58,15 +58,15 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6A0A113FC2C60BFEB5BF0759 /* Pods-HQAFNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQAFNetworking_Tests.release.xcconfig"; path = "Target Support Files/Pods-HQAFNetworking_Tests/Pods-HQAFNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		81D2E1BBDB49CEC66133ED37 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		81D2E1BBDB49CEC66133ED37 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9985249D34B88D5353BD3477 /* Pods_HQAFNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQAFNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40A76D4CAD8526ED15235B6 /* Pods_HQAFNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQAFNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2274E39FB58A1A57EBC6F68 /* Pods-HQAFNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQAFNetworking_Example.release.xcconfig"; path = "Target Support Files/Pods-HQAFNetworking_Example/Pods-HQAFNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C85D913ED13B36C661FB9A92 /* Pods-HQAFNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQAFNetworking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HQAFNetworking_Tests/Pods-HQAFNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D8FAD118EB507F1EEDD7EC79 /* HQAFNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HQAFNetworking.podspec; path = ../HQAFNetworking.podspec; sourceTree = "<group>"; };
+		D8FAD118EB507F1EEDD7EC79 /* HQAFNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HQAFNetworking.podspec; path = ../HQAFNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F3F6472AEC4D9B41557028DB /* Pods-HQAFNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQAFNetworking_Example.debug.xcconfig"; path = "Target Support Files/Pods-HQAFNetworking_Example/Pods-HQAFNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F812298ECDE7F407DD45D61F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F812298ECDE7F407DD45D61F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				C85D913ED13B36C661FB9A92 /* Pods-HQAFNetworking_Tests.debug.xcconfig */,
 				6A0A113FC2C60BFEB5BF0759 /* Pods-HQAFNetworking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +346,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HQAFNetworking_Example/Pods-HQAFNetworking_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/HQAFNetworking/HQAFNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HQAFNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

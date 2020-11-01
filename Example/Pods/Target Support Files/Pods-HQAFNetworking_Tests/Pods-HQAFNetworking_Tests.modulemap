@@ -1,0 +1,6 @@
+framework module Pods_HQAFNetworking_Tests {
+  umbrella header "Pods-HQAFNetworking_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 //
 
 #import "HQViewController.h"
+#import "HQAFNetworking.h"
 
 @interface HQViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [HQAFNetworking getWithUrlString:@"" success:^(id data) {
+        NSLog(@"%@",data);
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning
