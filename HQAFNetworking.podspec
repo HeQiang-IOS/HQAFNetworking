@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   #   'HQAFNetworking' => ['HQAFNetworking/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/*.h'
+  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
   s.dependency 'AFNetworking', '~> 3.2.1'
 end
