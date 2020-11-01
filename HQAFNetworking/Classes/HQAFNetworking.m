@@ -8,12 +8,12 @@
 #import "HQAFNetworking.h"
 #import <AFNetworking/AFNetworking.h>
 
-NS_ASSUME_NONNULL_BEGIN
+
 
 @implementation HQAFNetworking
 
 //GET请求
-+(void)getWithUrlString:(NSString *)urlString success:(nonnull HttpSuccess)success failure:(HttpFailure)failure{
++(void)getWithUrlString:(NSString *)urlString success:(HttpSuccess)success failure:(HttpFailure)failure{
   //创建请求管理者
   AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
  
@@ -51,4 +51,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_ASSUME_NONNULL_END
+
