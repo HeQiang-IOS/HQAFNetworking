@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 
 
-typedef void(^HttpSuccess)(id data);
-typedef void(^HttpFailure)(NSError * error);
+typedef void(^HttpSuccess)(id _Nullable data);
+typedef void(^HttpFailure)(NSError * _Nullable error);
 
 NS_ASSUME_NONNULL_BEGIN
 
