@@ -13,7 +13,7 @@
 @implementation HQAFNetworking
 
 //GET请求
-+(void)getWithUrlString:(NSString *)urlString success:(HttpSuccess)success failure:(HttpFailure)failure{
++(void)getWithUrlString:(NSString *)urlString success:(_Nullable HttpSuccess)success failure:(_Nullable HttpFailure)failure{
   //创建请求管理者
   AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
  
@@ -31,7 +31,7 @@
 }
  
 //POST请求
-+(void)postWithUrlString:(NSString *)urlString parameters:(NSDictionary *)parameters success:(HttpSuccess)success failure:(HttpFailure)failure{
++(void)postWithUrlString:(NSString *)urlString parameters:(NSDictionary *)parameters success:(_Nullable HttpSuccess)success failure:(_Nullable HttpFailure)failure{
   //创建请求管理者
   AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
   //

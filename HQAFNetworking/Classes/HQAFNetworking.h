@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HQAFNetworking : NSObject
 
 //get请求
-+(void)getWithUrlString:(NSString *)urlString success:(_Nullable HttpSuccess)success failure:(_Nullable HttpFailure)failure;
++(void)getWithUrlString:( NSString *)urlString success:(_Nullable HttpSuccess)success failure:(_Nullable HttpFailure)failure;
  
  
 //post请求
